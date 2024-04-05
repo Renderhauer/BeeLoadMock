@@ -1,0 +1,14 @@
+### MAIN HANDLER CONFIGURATION
+mainPort: 8000 # port where MAIN mock server is listening
+# other main options in main-config.yaml
+
+###
+### SERVICE HANDLER CONFIGURATION
+servicePort: 7999 # port where SERVICE handler is listening
+# SERVICE https + certs, better to be off?
+enableServiceHttps: false
+servicePubKey: pub2.pem
+servicePrivKey: priv2.key
+# kinda of secure
+accessTokenRequirement: true # if true, you need to send like header "Blm-Access-Token" a string from bellow array
+accessTokenList: ["qwerty", "asd"] # array of tokens

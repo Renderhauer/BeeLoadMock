@@ -1,0 +1,8 @@
+mocksRootFolder: mocks
+enableMockHttps: false
+mainPubKey: XXXXxxxx
+mainPrivKey: priv1.key
+dedicatedURLmockStatus: /get-mock-info
+dedicatedURLhealthcheck: /healthcheck
+enableFiberPrometheus: false
+dedicatedURLfiberPrometheus: /metrics

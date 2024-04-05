@@ -1,0 +1,18 @@
+identificator: 57b95fe0-fe57-4f61-8859-581e03369146
+authored: Belonogov Alexey
+about: test case, showing brainless response
+includeMockInfo: false
+method: GET
+path: /simple-get
+pathVariables: []
+queryVariables: []
+headerVariables: []
+bodyVariables:
+routes:
+  - priority: 0
+    fulfilledConditions:
+    code: 200
+    sleepMin: 0
+    sleepMax: 0
+    headers: []
+    body: '{"status":"OK"}'
