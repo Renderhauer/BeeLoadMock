@@ -10,13 +10,13 @@ headerVariables: [Content-type]
 bodyVariables:
   - name: task
     type: boundary-extract
-    rule: '"task": "<<l$r>>"' #>> unsubscribe
+    rule: '"task": "<<l$r>>"' #>> returns the value BETWEEN "task": " AND "
   - name: traceparent
     type: regexp-extract
-    rule: '"status":"(.*)"' #>> OK
+    rule: '"status":"(.*)"' #>> returns the value of status, 
   - name: traceparentbool
     type: regexp-exist
-    rule: '.*bf7e74fc3921d1defd3587643d142e9e.*' #>> true // false
+    rule: '.*bf7e74fc3921d1defd3587643d142e9e.*' #>> returns true or false
 routes:
   - priority: 0
     fulfilledConditions:
