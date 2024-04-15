@@ -10,5 +10,5 @@ enableServiceHttps: false
 servicePubKey: pub2.pem
 servicePrivKey: priv2.key
 # kinda of secure
-accessTokenRequirement: true # if true, you need to send like header "Blm-Access-Token" a string from bellow array
+accessTokenRequirement: false # if true, you need to send like header "Blm-Access-Token" a string from bellow array
 accessTokenList: ["qwerty", "asd"] # array of tokens
