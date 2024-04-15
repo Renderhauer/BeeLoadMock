@@ -1,7 +1,8 @@
 ░█▀▀█ █▀▀ █▀▀ ░█─── █▀▀█ █▀▀█ █▀▀▄ ░█▀▄▀█ █▀▀█ █▀▀ █─█  
 ░█▀▀▄ █▀▀ █▀▀ ░█─── █──█ █▄▄█ █──█ ░█░█░█ █──█ █── █▀▄  
 ░█▄▄█ ▀▀▀ ▀▀▀ ░█▄▄█ ▀▀▀▀ ▀──▀ ▀▀▀─ ░█──░█ ▀▀▀▀ ▀▀▀ ▀─▀  
-
+    
+    
 TOUCH IT
 1) Build main package
 2) Launch main executable file
@@ -9,7 +10,8 @@ TOUCH IT
 4) Use :7999 to send service requests    
     
 Watch URLs in mock folder and try to send some requests to :8000    
-
+    
+    
 FODLER STRUCTURE    
 * executable file    
 * main-config.yaml    
@@ -20,7 +22,7 @@ FODLER STRUCTURE
     *   mock1.yaml   
     *   mock2.yaml   
     *   ...   
-
+    
     
 SERVICE REQUESTS    
 * GET /shutdown    
@@ -40,11 +42,17 @@ SERVICE REQUESTS
 * GET /get-mainmock-config    
   _check main config_    
 
+     
  FUNCTIONS 
  * $[uuid] - generates uuidV4    
  * $[timeNowFormatted(Monday, 02-Jan-06 15:04:05 MST)] - time.now() with custom format    
    _https://yourbasic.org/golang/format-parse-string-time-date-example/_    
  * $[randomString(0123456789;;10)] - random string of given symbols (digits for the case) and given lenght (10 here)
  * $[file(body.txt)] - copy the text from the file to mock yaml file, so you can keep huge bodies separated
-    
-How to gerexp here - https://github.com/google/re2/wiki/Syntax    
+
+        
+HINTS    
+Be sure your uuids in identificator field are unique    
+Validate yaml file before uploading it    
+Check mock/url logic to be sure its behavior is as expected     
+How to gerexp here - https://github.com/google/re2/wiki/Syntax     
