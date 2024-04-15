@@ -1,6 +1,6 @@
 mocksRootFolder: mocks
 enableMockHttps: false
-mainPubKey: XXXXxxxx
+mainPubKey: pub1.key
 mainPrivKey: priv1.key
 dedicatedURLmockStatus: /get-mock-info
 dedicatedURLhealthcheck: /healthcheck
