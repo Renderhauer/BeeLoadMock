@@ -2,12 +2,27 @@
 ░█▀▀▄ █▀▀ █▀▀ ░█─── █──█ █▄▄█ █──█ ░█░█░█ █──█ █── █▀▄  
 ░█▄▄█ ▀▀▀ ▀▀▀ ░█▄▄█ ▀▀▀▀ ▀──▀ ▀▀▀─ ░█──░█ ▀▀▀▀ ▀▀▀ ▀─▀  
 
+TOUCH IT
 1) Build main package
 2) Launch main executable file
 3) Use :8000 to handle load request (URLs can be found in "mock" folder)
-4) Use :7999 to send service requests
+4) Use :7999 to send service requests    
+    
+Watch URLs in mock folder and try to send some requests to :8000    
 
-Service requests:
+FODLER STRUCTURE    
+* executable file    
+* main-config.yaml    
+* service-config.yaml    
+* some-cert.pub    
+* some-cert.priv    
+* mocks_folder   
+    *   mock1.yaml   
+    *   mock2.yaml   
+    *   ...   
+
+    
+SERVICE REQUESTS    
 * GET /shutdown    
   _stops :8000 handler_    
 * GET /start    
@@ -25,10 +40,11 @@ Service requests:
 * GET /get-mainmock-config    
   _check main config_    
 
- Functions    
+ FUNCTIONS 
  * $[uuid] - generates uuidV4    
  * $[timeNowFormatted(Monday, 02-Jan-06 15:04:05 MST)] - time.now() with custom format    
    _https://yourbasic.org/golang/format-parse-string-time-date-example/_    
  * $[randomString(0123456789;;10)] - random string of given symbols (digits for the case) and given lenght (10 here)
+ * $[file(body.txt)] - copy the text from the file to mock yaml file, so you can keep huge bodies separated
     
 How to gerexp here - https://github.com/google/re2/wiki/Syntax    
