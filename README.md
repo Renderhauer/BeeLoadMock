@@ -5,7 +5,7 @@
     
 TOUCH IT
 1) Build main package
-2) Launch main executable file
+2) Launch main executable file (usually "m.exe" in windows or just "m" in linux)
 3) Use :8000 to handle load request (URLs can be found in "mock" folder)
 4) Use :7999 to send service requests    
     
